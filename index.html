@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Rock Paper Scissor</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+	<h1 id="title">Rock Paper Scissor</h1>
+			<div id="scoreboard">
+				<h2>Computer : <span id="computer-points">0</span></h2>
+				<h2>Player   : <span id="player-points">0</span></h2>
+			</div>
+	<!-- Main Container -->
+	<div class="game-container">
+		<!-- Computer Section -->
+		<section class="computer panel">
+			<h3>Computer</h3>
+			<div class="display">
+				<img class="chosen" src=""  id="computer-display">
+			</div>
+			<div style="height: 2.6rem;">
+				
+			</div>
+		</section>
+
+		<div class="control">
+			<button id="btn">
+				<span class="material-icons" id="icon">play_arrow</span>Play
+			</button>
+		</div>
+
+		<!-- Player Section -->
+		<section class="player panel">
+			<h3>Player</h3>
+			<div class="display">
+				<img class="chosen" src=""  id="player-display">
+			</div>
+			<div class="selection">
+				<img src="img/rock.png" class="choice" id="rock">
+				<img src="img/paper.png" class="choice" id="paper">
+				<img src="img/scissor.png" class="choice" id="scissor">
+			</div>
+		</section>
+		<section class="announcement">
+		</section>
+	</div>
+
+	<script type="module" src="./app.js"></script>
+</body>
+</html>
