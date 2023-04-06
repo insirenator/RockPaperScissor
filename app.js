@@ -54,8 +54,8 @@ function resetGame() {
 	compScore = 0;
 	domElement.compPoints.textContent = 0;
 	domElement.playerPoints.textContent = 0;
-	domElement.compDisplay.src = '';
-	domElement.playerDisplay.src = '';
+	domElement.compDisplay.src = './img/white.png';
+	domElement.playerDisplay.src = './img/white.png';
 	domElement.rock.removeEventListener('click', rockFunc);
 	domElement.paper.removeEventListener('click', paperFunc);
 	domElement.scissor.removeEventListener('click', scissorFunc);
